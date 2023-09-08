@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #card1 {
+            background-color: #D9DA3E;
+            width: 700px;
+            height: 600px;
+            margin: 0 auto; 
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+        }
+        
+        #button {
+           
+            margin-left: 10px;
+            margin-top: 20px;
+            width: 350px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 20px; 
+            
+        }
+        
+        button {
+            font-size:20px;
+            text-align: start;
+            color: #3E4BC7;
+            font-weight:550;
+            border: none;
+            width: 100%;
+            height: 30px;
+            margin: 5px 0; 
+            background: linear-gradient(to right, white 90%, black 10%);
+        }
+        #button :hover{
+            background : linear-gradient(to right,rgb(20, 19, 19) 90%, white 10%);;
+        }
+        #home{
+            color:#7D0279 ;
+        }
+        
+        #content {
+            flex-grow: 1;
+            margin-left: 40px;
+            padding: 20px; 
+            color: #7D0279;
+            font-size: larger;
+            font-weight: bolder;
+        }
+        
+        hr {
+            border-color: #7D0279;
+        }
+    </style>
+</head>
+<body>
+    <div id="card1">
+        <div id="button">
+            <button id="home">Home page</button>
+            <button>Musings</button>
+            <button>My town</button>
+            <button>Links</button>
+        </div>
+        <div id="content">
+            <div id="head">
+                <h1>My First Styled Page</h1>
+            </div>
+            <div id="body">
+                <p>
+                    Welcome to my styled page!<br><br>
+                    It lacks images, but at least it has style. And it has links, even if they don't go anywhere...<br><br>
+                    There should be more here, but I don't know what yet.
+                </p>
+            </div>
+            <div id="foot">
+                <hr>
+                <p>Made on 8 September 2023<br>by myself</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
