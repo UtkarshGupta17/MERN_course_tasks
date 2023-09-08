@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form1{
+            align-items: center;
+            
+            margin-left: 480px; 
+        }
+        #uim{
+            margin-left: 57px;
+            width: 250px;
+        }
+       
+        #Login{
+            background-color: #4CB050;
+            border: none;
+            color: white;
+            display:inline-block;
+            font-size: 15px;
+            font-weight: 1000px;
+            width: 360px;
+            height: 25px;
+
+            
+
+        }
+
+        #Login:hover{background-color: hsl(140, 57%, 50%);color: rgb(0, 0, 0);}
+        #name,#pass{
+            width: 350px;
+            height: 25px;
+        }
+        
+        #remm{
+            
+            
+            font-size: 16px;
+            font-weight: bold;
+
+
+        }
+        #cc{
+            background-color: rgba(255, 255, 255, 0.808);
+            border: 1;
+        }
+        #can{
+            background-color:#F14336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight:bold;
+            width: 100px;
+            height: 30px;
+
+        }
+        #can:hover{
+            background-color: rgb(95, 18, 18);
+        }
+        #forgot{
+            margin-left: 140px;
+        }
+
+        
+        
+
+
+
+    </style>
+</head>
+<body>
+
+    <form action="/action_page.php" id="form1">
+        
+        <img src="https://img.freepik.com/premium-vector/anonymous-user-circle-icon-vector-illustration-flat-style-with-long-shadow_520826-1931.jpg" alt="user image" id="uim"><br>
+        <label for="name" style="font-weight: 1000;">Username:</label><br>
+
+        <input type="text"  id="name" name="name" placeholder="Enter Username">
+        <br><br>
+        
+        <label for="pass" style="font-weight: 1000;">Password:</label><br>
+        <input type="password" id="pass" name="pass" placeholder="Enter Password">
+        <br><br>
+        <button id="Login">Login</button>
+        <br><br>
+        
+        <label for="remm" id="remm">Remember me:</label>
+        <input type="checkbox"id="rem" name="rem">
+        <br><br>
+    <div id="cc">
+        <button id="can">cancel</button>
+        <a href="forgot.html" target="_blank" style="color: black;" id="forgot">Forgot password?</p></a>
+    </div>
+
+
+    </form>
+</body>
+</html>

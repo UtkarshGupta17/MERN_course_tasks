@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <center><h1 style="color: blue;">Registration Form</h1></center>
+    <center>
+    <form>
+        <table border="2">
+            <tr>
+                <td><label for="firstname">Firstname:</label></td>
+                <td><input type="text" id="firstname" name="firstname" size="15"></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Lastname:</label></td>
+                <td><input type="text" id="lastname" name="lastname" size="15"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password:</label></td>
+                <td><input type="password" id="pass" name="pass"></td>
+            </tr>
+            <tr>
+                <td><label for="repass">Re-Enter password:</label></td>
+                <td><input type="password" id="repass" name="repass"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age"></td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td>
+                    <input type="text" id="countrycode" name="countrycode" value="+91" size="2">
+                    <input type="text" id="phone" name="phone" size="10">
+                </td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea id="address" name="address" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><input type="text" id="sta" name="sta"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td>
+                    <select id="country" name="country">
+                        <option value="india">India</option>
+                        <option value="USA">USA</option>
+                        <option value="germany">Germany</option>
+                        <option value="switzerland">Switzerland</option>
+                        <option value="dubai">Dubai</option>
+                        <option value="china">China</option>
+                        <option value="nepal">Nepal</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Languages Known:</td>
+                <td>
+                    <input type="checkbox" id="english" name="languages[]" value="English">
+                    <label for="english">English</label>
+                    <input type="checkbox" id="kannada" name="languages[]" value="Kannada">
+                    <label for="kannada">Kannada</label>
+                    <input type="checkbox" id="hindi" name="languages[]" value="Hindi">
+                    <label for="hindi">Hindi</label>
+                    <input type="checkbox" id="telugu" name="languages[]" value="Telugu">
+                    <label for="telugu">Telugu</label>
+                </td>
+        
+            </tr>
+            
+                <td>
+                    <input type="checkbox" id="dec" name="dec">
+                    <label for="dec">Hereby I declare all the given details are true</label>
+                </td>
+            
+            </tr>
+       
+            <br>
+
+                
+            <td><center><input type="button" value="Submit"></center></td>
+            
+        </table>
+    </form>
+</center>
+</body>
+</html>

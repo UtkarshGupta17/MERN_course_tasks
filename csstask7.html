@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bg2 {
+            background-color: #A22B55;
+            padding: 10px;
+            width: 900px;
+            display: flex;
+            flex-wrap: wrap;
+            height: 480px;
+            margin-left: 175px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        #bg3 {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 700px;
+            height: 500px;
+            padding: auto;
+            margin-left: 100px;
+            align-items: center;
+            background-color: #75203F;
+        }
+        #form1 {
+            display: inline-block;
+            padding-left: 27%;
+            padding-top: 10%;
+            color: white;
+        }
+        label {
+
+            width: 150px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .gender-checkbox {
+            width: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            
+        }
+        #rbut{
+            align-items: center;
+            width: 300px;
+            margin-left: 12px;
+            height: 35px;
+            color: rgb(57, 51, 51);
+            font-weight: bold;
+            font-size: large;
+            border-radius: 7px;
+            border: none;
+
+
+        }
+        #rbut:hover {background-color: rgba(31, 30, 30, 0.776); color: white;}
+        
+        #abt{
+            align-items: flex-start;
+
+            height: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="bg2">
+        <div id="bg3">
+            <form action="/action_page.php" id="form1">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter Name" id="name" name="name">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter Email" id="email" name="email">
+                <br><br>
+                <label for="pass">Password:</label>
+                <input type="password" placeholder="Enter Password" id="pass" name="pass">
+                <br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Enter Phone number" name="phone" pattern="[1-9]{1}[0-9]{9}">
+                <br><br>
+                <label>Gender:</label>
+                <label for="male" class="gender-checkbox">Male:</label>
+                <input type="checkbox" id="male" name="sex">
+                <label for="female" class="gender-checkbox">Female:</label>
+                <input type="checkbox" id="female" name="sex">
+                <label for="other" class="gender-checkbox">Other:</label>
+                <input type="checkbox" id="other" name="sex">
+                <br><br>
+                <label for="lang">Language:</label>
+                <select id="lang" name="lang" >
+                    <option value="lang" >Select Language</option>
+                    <option value="English" >English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="German">German</option>
+                </select>
+                <br><br>
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" name="zip">
+                <br><br>
+                <label for="abt">About:</label>
+                <input type="text" placeholder="Write about yourself..." id="abt" name="abt">
+                <br><br>
+        
+                <button id="rbut">Register</button>
+            
+            </form>
+        </div>
+    </div>
+</body>
+</html>
